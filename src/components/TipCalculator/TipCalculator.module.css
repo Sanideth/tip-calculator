@@ -1,0 +1,14 @@
+.tipCalculatorContainer {
+  display: flex;
+  background-color: #fff;
+  padding: 3.2em;
+}
+
+.calculatorContainer {
+  padding: 1.3em 1.6em 1.6em 1.6em;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultContainer {
+}
