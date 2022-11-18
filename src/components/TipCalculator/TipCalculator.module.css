@@ -42,7 +42,7 @@
 }
 
 .billText,
-.numberOfPeopleText {
+.errorContainer {
   margin-bottom: 0.6rem;
 }
 
@@ -145,4 +145,17 @@
   color: #00474b;
   font-size: 2rem;
   text-transform: uppercase;
+}
+.errorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error {
+  color: #e17457;
+}
+
+.clickedButton {
+  background-color: #26c2ae;
+  color: #00474b;
 }

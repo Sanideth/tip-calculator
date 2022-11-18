@@ -1,6 +1,13 @@
-import classes from "./InputField.module.css";
-const InputField = ({ className, type, placeholder }) => {
-  return <input type={type} className={className} placeholder={placeholder} />;
+const InputField = ({ className, type, placeholder, onChange, value }) => {
+  return (
+    <input
+      type={type}
+      className={className}
+      placeholder={placeholder}
+      onChange={onChange}
+      value={value}
+    />
+  );
 };
 
 export default InputField;
