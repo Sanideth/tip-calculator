@@ -138,13 +138,17 @@
   line-height: 7.1rem;
 }
 
-.button {
+.button,
+.resetButton {
   width: 100%;
   background: #0d686d;
   border-radius: 5px;
   color: #00474b;
   font-size: 2rem;
   text-transform: uppercase;
+}
+.resetButton {
+  background: #26c2ae;
 }
 .errorContainer {
   display: flex;

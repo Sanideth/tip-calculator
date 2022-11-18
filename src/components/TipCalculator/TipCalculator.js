@@ -32,7 +32,7 @@ const TipCalculator = () => {
 
   const handleReset = () => {
     setBill("");
-    setTipPercent(0); //because of the percent character at the end
+    setTipPercent(0);
     setButtonId(null);
     setPersons(0);
     setCustomPercent(0);
@@ -114,7 +114,14 @@ const TipCalculator = () => {
               : `$${0.0}`}
           </p>
         </div>
-        <Button className={classes.button} onClick={handleReset}>
+        <Button
+          className={
+            bill && (tipPercent || customPercent) && persons
+              ? classes.resetButton
+              : classes.button
+          }
+          onClick={handleReset}
+        >
           Reset
         </Button>
       </div>
