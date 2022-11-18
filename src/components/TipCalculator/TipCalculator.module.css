@@ -7,6 +7,19 @@
   width: 92rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .tipCalculatorContainer {
+    width: 75rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .tipCalculatorContainer {
+    width: 50rem;
+    flex-direction: column;
+  }
+}
+
 .calculatorContainer {
   padding: 1.3rem 4.8rem 1.6rem 1.6rem;
   display: flex;
@@ -15,6 +28,12 @@
   color: #5e7a7d;
 }
 
+@media only screen and (max-width: 800px) {
+  .calculatorContainer {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+}
 .resultContainer {
   background-color: #00474b;
   border-radius: 2.5rem;
@@ -39,8 +58,8 @@
   transform: translateY(-50%);
   left: 1.92rem;
   position: absolute;
-  width: 0.98rem;
-  height: 1.54rem;
+  width: 9.8px;
+  height: 15.4px;
 }
 
 .tipText {
@@ -54,9 +73,20 @@
   grid-row-gap: 1.6rem;
   margin-bottom: 4rem;
 }
+@media only screen and (max-width: 1000px) {
+  .tipContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .tipInputField {
   padding-right: 1rem;
   padding-left: 1.2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .tipInputField {
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+  }
 }
 .numberOfPeopleInputContainer {
   position: relative;
@@ -69,8 +99,8 @@
   transform: translateY(-50%);
   left: 1.92rem;
   position: absolute;
-  width: 1.3rem;
-  height: 1.6rem;
+  width: 13px;
+  height: 16px;
 }
 
 .tipAmountContainer,
@@ -82,6 +112,12 @@
 }
 .tipAmountPerPersonContainer {
   margin-bottom: 12.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .tipAmountPerPersonContainer {
+    margin-bottom: 4rem;
+  }
 }
 
 .tipAmountText,

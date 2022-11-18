@@ -6,3 +6,10 @@
   background-color: #ddd;
   font-size: 1.6rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .app {
+    height: auto;
+    padding: 3rem;
+  }
+}
