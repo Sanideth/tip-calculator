@@ -38,8 +38,6 @@ const TipCalculator = () => {
     setCustomPercent(0);
   };
 
-  console.log(persons);
-
   return (
     <div className={classes.tipCalculatorContainer}>
       <div className={classes.calculatorContainer}>
