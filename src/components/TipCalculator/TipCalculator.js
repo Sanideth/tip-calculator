@@ -8,37 +8,41 @@ const TipCalculator = () => {
   return (
     <div className={classes.tipCalculatorContainer}>
       <div className={classes.calculatorContainer}>
-        <p>Bill</p>
-        <div>
-          <InputField />
+        <p className={classes.billText}>Bill</p>
+        <div className={classes.billInputContainer}>
+          <InputField
+            className={classes.billInput}
+            type="number"
+            placeholder="0"
+          />
         </div>
-        <p>Select Tip %</p>
-        <div>
+        <p className={classes.tipText}>Select Tip %</p>
+        <div className={classes.tipContainer}>
           {PERCENTAGES.map((percent) => (
-            <Button>{percent}%</Button>
+            <Button key={percent}>{percent}%</Button>
           ))}
-          <InputField />
+          <InputField placeholder="Custom" className={classes.tipInputField} />
         </div>
-        <p>Number of People</p>
-        <div>
-          <InputField />
+        <p className={classes.numberOfPeopleText}>Number of People</p>
+        <div className={classes.numberOfPeopleInputContainer}>
+          <InputField placeholder="0" />
         </div>
       </div>
 
       <div className={classes.resultContainer}>
-        <div>
-          <p>
+        <div className={classes.tipAmountContainer}>
+          <p className={classes.tipAmountText}>
             Tip Amount <span>/ person</span>
           </p>
-          <p>0</p>
+          <p className={classes.tipAmount}>0</p>
         </div>
-        <div>
-          <p>
+        <div className={classes.tipAmountPerPersonContainer}>
+          <p className={classes.tipAmountPerPersonText}>
             Total <span>/ person</span>
           </p>
-          <p>0</p>
+          <p className={classes.tipAmountPerPerson}>0</p>
         </div>
-        <Button>Reset</Button>
+        <Button className={classes.button}>Reset</Button>
       </div>
     </div>
   );

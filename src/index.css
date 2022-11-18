@@ -14,5 +14,47 @@ html {
 
 body {
   font-family: "Space Mono", monospace;
-  height: 100vh;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  background-color: #f3f9fa;
+  outline: none;
+  border: 0;
+  font-weight: inherit;
+  border-radius: 0.5rem;
+  text-align: right;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0.6rem 1.6rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 24px;
+  line-height: 36px;
+  border: 0;
+  border-radius: 0.5rem;
+  font-weight: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #00474b;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #9fe8df;
+  color: #00474b;
 }

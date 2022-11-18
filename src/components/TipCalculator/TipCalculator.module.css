@@ -1,14 +1,112 @@
 .tipCalculatorContainer {
   display: flex;
   background-color: #fff;
-  padding: 3.2em;
+  padding: 3.2rem;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 2.5rem;
+  width: 92rem;
 }
 
 .calculatorContainer {
-  padding: 1.3em 1.6em 1.6em 1.6em;
+  padding: 1.3rem 4.8rem 1.6rem 1.6rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  color: #5e7a7d;
 }
 
 .resultContainer {
+  background-color: #00474b;
+  border-radius: 2.5rem;
+  padding: 4.1rem 4rem 4rem 4rem;
+  flex: 1;
+}
+
+.billText,
+.numberOfPeopleText {
+  margin-bottom: 0.6rem;
+}
+
+.billInputContainer {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.billInputContainer::before {
+  content: "";
+  background-image: url("../../images/icon-dollar.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.92rem;
+  position: absolute;
+  width: 0.98rem;
+  height: 1.54rem;
+}
+
+.tipText {
+  margin-bottom: 1.6rem;
+}
+
+.tipContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.3rem;
+  grid-row-gap: 1.6rem;
+  margin-bottom: 4rem;
+}
+.tipInputField {
+  padding-right: 1rem;
+  padding-left: 1.2rem;
+}
+.numberOfPeopleInputContainer {
+  position: relative;
+}
+
+.numberOfPeopleInputContainer::before {
+  content: "";
+  background-image: url("../../images/icon-person.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.92rem;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.6rem;
+}
+
+.tipAmountContainer,
+.tipAmountPerPersonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.tipAmountPerPersonContainer {
+  margin-bottom: 12.2rem;
+}
+
+.tipAmountText,
+.tipAmountPerPersonText {
+  color: #fff;
+}
+
+.tipAmountText span,
+.tipAmountPerPersonText span {
+  display: block;
+  color: #7f9d9f;
+}
+
+.tipAmount,
+.tipAmountPerPerson {
+  color: #26c2ae;
+  font-size: 4.8rem;
+  line-height: 7.1rem;
+}
+
+.button {
+  width: 100%;
+  background: #0d686d;
+  border-radius: 5px;
+  color: #00474b;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
