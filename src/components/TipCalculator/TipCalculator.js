@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Button from "../Button/Button";
 import InputField from "../InputField/InputField";
 import classes from "./TipCalculator.module.css";
@@ -95,7 +96,7 @@ const TipCalculator = () => {
           </p>
           <p className={classes.tipAmount}>
             {persons
-              ? `$${((tipPercent || customPercent * bill) / 100).toFixed(2)}`
+              ? `$${(((tipPercent || customPercent) * bill) / 100).toFixed(2)}`
               : `$${0.0}`}
           </p>
         </div>
